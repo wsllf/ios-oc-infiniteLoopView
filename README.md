@@ -1,1 +1,4 @@
 # ios-oc-infiniteLoopView
+该无限轮播图采用UIScrollView实现，可以采用的图片源有，图片名(图片名不能以http开头)，UIImage对象，http开头的图片链接的NSArray数组，数组中的元素类型必须为上述三种类型同一种类型。用该类对象的imagesMArray属性接收这个数组。
+该类中的图片链接用SDWebImage实现显示。
+图片的轻拍手势用block的方式暴露给外部。block中的参数为该图片在上述数组中的索引位置。
